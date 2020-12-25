@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KH Web</title>
+        <style>
+            html, body {height: 100%;}
+            section {height: 80%;}
+            header {text-align: center}
+            .whitefont {background-color: lightslategray;
+            color: white;}
+        </style>
+    </head>
+    <body>
+        <header class="main top">
+            <!-- <img src="https://www.google.co.kr/logos/doodles/2020/december-holidays-days-2-30-6753651837108830.3-law.gif"> -->
+            <img src="images/top_logo.jpg" title="연말 스페셜" usemap="#testmap">
+            <map name="testmap" id="testmap">
+                <area shape="rect" coords="0,0,40,37" href="http://www.iei.or.kr">
+                <area shape="rect" coords="40,0,165,37" href="practice03.html">
+            </map>
+        </header>
+        <nav class="main whitefont" style="text-align: right;">
+            <a href="index.html">홈</a> | 
+            <a href="board.html" target="contents">게시판</a> |
+            <a href="login.html" target="contents">로그인</a> | 
+            <a href="register.html" target="contents">회원가입</a>
+            <!-- 요소의 이름으로 이동 -->
+            <!-- | <a href="#myvideo">비디오로 이동</a> -->
+        </nav>
+        <section class="main"> 
+            <iframe name="contents" src="main.html" width="100%" height="100%" style="border: none;"></iframe>
+        </section>
+        <footer class="main whitefont">
+            Posted by : KH Academy
+        </footer>
+    </body>
+</html>

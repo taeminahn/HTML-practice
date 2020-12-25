@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>로그인</title>
+</head>
+
+<body>
+    <h1>로그인 페이지</h1>
+    <form action="login_check.html" method="GET">
+        <fieldset>
+            <legend>테스트1</legend>
+            <input type="hidden" name="text01" value="테스트" style="height: 50px; width: 100px;">
+            <input type="text" name="text02" maxlength="20" placeholder="20글자까지만 입력가능">
+            <input type="button" name="text03" value="버튼테스트" onclick="javascript:alert('버튼테스트');"><br>
+            <input type="checkbox" name="test04" value="check1" checked>체크박스선택1<br>
+            <input type="checkbox" name="test04" value="check2">체크박스선택2<br>
+            <input type="radio" name="test05" value="radio1" checked>라디오박스1<br>
+            <input type="radio" name="test05" value="radio2">라디오박스2<br>
+            <input type="file" name="test06"><br>
+            <input type="image" name="test07" src="images/top_logo.jpg"><br>
+        </fieldset>
+        <fieldset>
+            <legend>테스트2</legend>
+            <input type="color" name="test11" value="#4169E1"><br>
+            <input type="date" name="test12" min="2000-01-01" max="2020-12-16" value="2020-12-16"><br>
+            <!-- <input type="datetime" name="test13"><br> -->
+            <input type="datetime-local" name="test14"><br>
+            <input type="time" name="test15"><br>
+            <input type="number" name="test16" min="0" max="150"><br>
+            <input type="range" name="test16-2" min="0" max="150">
+            <input type="email" name="test17">
+        </fieldset>
+        <fieldset>
+            <legend>테스트3</legend>
+            <select name="test18">
+                <option value="java">자바</option>
+                <option value="oracle">오라클</option>
+                <option value="jdbc">JDBC</option>
+            </select><br>
+            <input type="text" name="test19" list="dlist1"><br>
+            <datalist id="dlist1">
+                <option value="java" label="자바"></option>
+                <option value="oracle" label="오라클"></option>
+                <option value="jdbc" label="제이디비시"></option>
+            </datalist><br>
+            <textarea name="text20" cols="100" rows="10"></textarea><br>
+            <progress value="5" max="10"></progress><br>
+            <meter value="7" min="0" max="10"></meter><br>
+            <button type="submit">안녕</button><br>
+        </fieldset>
+        <fieldset>
+            <legend>로그인</legend>
+            <label for="user_id">ID : </label><input type="text" name="user_id">
+            <label for="user_pw">PW : </label><input type="password" name="user_pw">
+            <input type="submit" value="로그인">
+            <input type="reset" value="다시입력">
+        </fieldset>
+    </form>
+</body>
+
+</html>

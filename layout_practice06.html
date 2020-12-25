@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>레이아웃 실습문제6</title>
+        <style>
+            body {text-align: center;}
+            h1 {text-align: left;}
+            header {
+                border: 1px solid black;
+                width: 800px;
+                height: 80px;
+                position: relative;
+                overflow: hidden;
+            }
+            .mheader {
+                border: 1px solid black; 
+                width: 560px;
+                height: 80px;
+                position: absolute;
+                left: 120px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .rheader {
+                border: 1px solid black; 
+                width: 120px;
+                height: 80px;
+                position: absolute;
+                left: 680px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .lheader {
+                border: 1px solid black; 
+                width: 120px;
+                height: 80px;
+                position: absolute;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            nav {
+                border: 1px solid black; 
+                width: 800px;
+                height: 20px; 
+                margin-top: -1px;
+            }
+            section {
+                border: 1px solid black;
+                width: 800px;
+                height: 500px;
+                position: relative;
+                margin-top: -1px;
+            }
+            .msection {
+                border: 1px solid black;
+                width: 468px;
+                height: 500px; 
+                position: absolute;
+                left: 100px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .laside {
+                border: 1px solid black;
+                width: 100px;
+                height: 500px; 
+                position: absolute;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .raside {
+                border: 1px solid black;
+                width: 232px;
+                height: 500px;
+                position: absolute;
+                left: 568px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .login {
+                border: 1px solid black;
+                width: 150px;
+                height: 60px;
+                position: relative;
+            }
+            .id {
+                border: 1px solid black;
+                width: 150px;
+                height: 30px;
+                margin-left: -1px;
+                margin-top: -1px;
+                position: absolute;
+            }
+            .pw {
+                border: 1px solid black;
+                width: 150px;
+                height: 30px;
+                margin-left: -1px;
+                margin-top: -1px;
+                position: absolute;
+                top: 30px;
+            }
+            .login_button {
+                border: 1px solid black; 
+                width: 80px;
+                height: 60px;
+                margin-top: -1px;
+                margin-left: -1px;
+                position: absolute;
+                left: 150px;
+            }
+            #submit {
+                width: 60px;
+                height: 50px;
+                margin-left: 2px;
+                margin-top: 5px;
+            }
+            .login_bottom {
+                border: 1px solid black; 
+                width: 230px;
+                height: 20px;
+                margin-left: -1px;
+                position: absolute;
+                top: 60px;
+                font-size: 14px;
+            }
+            footer {
+                border: 1px solid black;
+                width: 800px;
+                height: 80px;
+                margin-top: -1px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>문제_06 : login폼 적용해보기.</h1>
+        <header>
+            <div class="rheader">SIDE</div>
+            <div class="mheader">TITLE</div>
+            <div class="lheader">LOGO</div>
+        </header>
+        <nav>NAVIGATOR</nav>
+        <section>
+            <aside>
+                <div class="laside">BANNER</div>
+                <div class="msection">CONTENTS</div>
+                <div class="raside">
+                    <form action="https://www.naver.com/" method="GET">
+                        <div class="login">
+                            <div class="id">
+                                <input type="text" name="id" autofocus placeholder="ID를 입력하세요." 
+                                style="width: 142px; height: 25px;">
+                            </div>
+                            <div class="pw">
+                                <input type="password" name="pw" placeholder="PW를 입력하세요."
+                                style="width: 142px; height: 25px;">
+                            </div>
+                            <div class="login_button">
+                                <input type="submit" id="submit" value="로그인">
+                            </div>
+                            <div class="login_bottom">
+                                <a href="https://www.naver.com/">회원가입</a>
+                                <a href="https://www.naver.com/">ID/PW 찾기</a>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </aside>
+        </section>
+        <footer>FOOTER</footer>
+    </body>
+</html>

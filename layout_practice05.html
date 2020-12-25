@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>레이아웃 실습문제5</title>
+        <style>
+            .login {
+                border: 1px solid black;
+                width: 150px;
+                height: 60px;
+                position: relative;
+            }
+            .id {
+                border: 1px solid black;
+                width: 150px;
+                height: 30px;
+                margin-left: -1px;
+                margin-top: -1px;
+                position: absolute;
+            }
+            .pw {
+                border: 1px solid black;
+                width: 150px;
+                height: 30px;
+                margin-left: -1px;
+                margin-top: -1px;
+                position: absolute;
+                top: 30px;
+            }
+            .login_button {
+                border: 1px solid black; 
+                width: 80px;
+                height: 60px;
+                margin-top: -1px;
+                margin-left: -1px;
+                position: absolute;
+                left: 150px;
+            }
+            #submit {
+                width: 60px;
+                height: 50px;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+            .login_footer {
+                border: 1px solid black; 
+                width: 230px;
+                height: 20px;
+                margin-left: -1px;
+                position: absolute;
+                top: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="https://www.naver.com/" method="GET">
+            <div class="login">
+                <div class="id">
+                    <input type="text" name="id" autofocus placeholder="ID를 입력하세요." 
+                    style="width: 142px; height: 25px;">
+                </div>
+                <div class="pw">
+                    <input type="password" name="pw" placeholder="PW를 입력하세요."
+                    style="width: 142px; height: 25px;">
+                </div>
+                <div class="login_button">
+                    <input type="submit" id="submit" value="로그인">
+                </div>
+                <div class="login_footer">
+                    <a href="">회원가입</a>
+                    <a href="">ID/PW 찾기</a>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

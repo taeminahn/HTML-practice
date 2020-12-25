@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>폰트 테스트1</title>
+        <!-- 외부 글꼴 적용 시 링크 -->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+        <style>
+            /* 글꼴 관련 스타일 지정 */
+            #ff1 {font-family: "궁서체";}
+            #ff2 {font-family: "고딕체";}
+            #ff3 {font-family: "없는 글꼴","궁서체";}
+            #web-font {font-family: "Nanum Pen Script";}
+            /* 크기 관련 스타일 지정 */
+            #size1 {font-size: 30px;}
+            #size2 {font-size: 30pt;}
+            #size3 {font-size: 30%;}
+            #size4 {font-size: 30em;}
+            /* 굵기 관련 스타일 지정 */
+            #fw1 {font-weight: normal;}
+            #fw2 {font-weight: bold;}
+            #fw3 {font-weight: bolder;}
+            #fw4 {font-weight: lighter;}
+            #fw5 {font-weight: 100;}
+            #fw6 {font-weight: 400;}
+            #fw7 {font-weight: 900;}
+            /* 작은 대문자로 변경 */
+            #fv {font-variant: small-caps;}
+            /* 기울임 관련 스타일 지정 */
+            #fs1 {font-style: normal;}
+            #fs2 {font-style: italic;}
+            #fs3 {font-style: oblique;}
+            /* 글꼴 스타일 한번에 지정 */
+            #f1 {font : 16px/100px "궁서체"}
+            #f2 {font : italic bold 20px "궁서체"}
+        </style>
+    </head>
+    <body>
+        <h1>글꼴 관련 스타일 연습</h1>
+        <hr>
+        <h3>font-family 속성 : 텍스트의 글꼴을 지정할 때 사용</h3>
+        <pre>선택자 {font-family : 글꼴이름;}</pre>
+        <p id="ff1">글꼴 변경 테스트1(궁서체)</p>
+        <p id="ff2">글꼴 변경 테스트2(고딕체)</p>
+        <p id="ff3">글꼴 변경 테스트3(없는 글꼴)</p>
+        
+        <h4>** 웹 폰트 사용하는 방법</h4>
+        <p>웹 폰트 제공 사이트 예시 : 
+            <a href="http://fonts.google.com" target="_blank">
+                구글 웹 폰트 사이트
+            </a>
+        </p>
+        
+        <p id="web-font">font style test(Nanum Pen Script) - 외부글꼴</p>
+        <hr>
+        <h3>font-size 속성 : 텍스트의 크기를 변경할 때 사용</h3>
+        <pre>선택자 {font-size : 크기;}</pre>
+        <ul>
+            <li id="size1">고정크기 px 테스트</li>
+            <li id="size2">고정크기 pt 테스트</li>
+            <li id="size3">가변크기 % 테스트</li>
+            <!-- <li id="size4">가변크기 em 테스트</li> -->
+        </ul>
+        <hr>
+        <h3>font-weight 속성 : 텍스트의 두께를 변경할 때 사용</h3>
+        <pre>선택자 {font-weight : normal | bold | bolder | lighter | 100 | 400 | 900}</pre>
+        <ul>
+            <li id="fw1">기본 굵기</li>
+            <li id="fw2">굵은 글꼴로 변경(700)</li>
+            <li id="fw3">원래 굵기보다 더 가늘게 변경</li>
+            <li id="fw4">원래 굵기보다 더 굵게 변경</li>
+            <li id="fw5">굵기 100으로 변경(lighter)</li>
+            <li id="fw6">굵기 400으로 변경(normal)</li>
+            <li id="fw7">굵기 900으로 변경(bolder)</li>
+        </ul>
+        <hr>
+        <h3>font-variant 속성 : 작은 대문자로 변경</h3>
+        <pre>선택자 {font-variant : 속성값;}</pre>
+        <p>I LOVE YOU</p>
+        <P id="fv">i love you</P>
+        <hr>
+        <h3>font-style 속성 : 텍스트의 기울임을 지정</h3>
+        <pre>선택자 {font-style : normal | italic | oblique;}</pre>
+        <ul>
+            <li id="fs1">normal 기울임 글꼴</li>
+            <li id="fs2">italic 기울임 글꼴</li>
+            <li id="fs3">oblique 기울임 글꼴</li>
+        </ul>
+        <hr>
+        <h3>font 속성 : 글꼴 관련 스타일을 한번에 지정할 때 사용</h3>
+        <pre>선택자 {font : font-style font-variant font-weight font-size/line-height font-family}</pre>
+        <ul>
+            <li id="f1">글꼴 관련 스타일 테스트1 (16px(size)/100px(line-height) 궁서체)</li>
+            <li id="f2">글꼴 관련 스타일 테스트2 (italic bold 20px 궁서체)</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form action="https://www.naver.com/" method="GET">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li><label for="delivery">납품자명 : </label><input type="text" name="delivery" autofocus placeholder="ex) 홍길동"></li><br>
+                <li><label for="email">email : </label><input type="email" name="email" placeholder="ex)ex@ex.com"></li><br>
+                <li><label for="home">홈페이지 : </label><input type="text" name="home" placeholder="http://"></li><br>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>납품 정보</legend>
+            <ul>
+                <li><label for="productName">상품명 : </label><input type="text" name="productName"></li><br>
+                <li><label for="deliveryNo">납품수량 : </label><input type="number" name="deliveryNo" min="100" placeholder="최소 100"></li><br>
+                <li><label for="grade">납품등급 : </label><input type="range" name="grade" min="0" max="10"></li><br>
+                <li><label for="comment">기타사항 : </label><textarea name="textarea"></textarea></li><br>
+            </ul>
+        </fieldset><br>
+        <input type="submit" value="send message">
+        <input type="reset" value="reset"><br><br>
+        <hr>
+    </form>
+</body>
+
+</html>

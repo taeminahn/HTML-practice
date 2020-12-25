@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>레이아웃 실습문제4</title>
+        <style>
+            body {text-align: center;}
+            header {
+                border: 1px solid black;
+                width: 600px;
+                height: 80px;
+                position: relative;
+                overflow: hidden;
+            }
+            .mheader {
+                border: 1px solid black; 
+                width: 360px;
+                height: 80px;
+                position: absolute;
+                left: 120px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .rheader {
+                border: 1px solid black; 
+                width: 120px;
+                height: 80px;
+                position: absolute;
+                left: 480px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .lheader {
+                border: 1px solid black; 
+                width: 120px;
+                height: 80px;
+                position: absolute;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            nav {
+                border: 1px solid black; 
+                width: 600px;
+                height: 20px; 
+                margin-top: -1px;
+            }
+            section {
+                border: 1px solid black;
+                width: 600px;
+                height: 300px;
+                position: relative;
+                margin-top: -1px;
+            }
+            .msection {
+                border: 1px solid black;
+                width: 350px;
+                height: 300px; 
+                position: absolute;
+                left: 100px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .laside {
+                border: 1px solid black;
+                width: 100px;
+                height: 300px; 
+                position: absolute;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .raside {
+                border: 1px solid black;
+                width: 150px;
+                height: 300px;
+                position: absolute;
+                left: 450px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            
+            footer {
+                border: 1px solid black;
+                width: 600px;
+                height: 80px;
+                margin-top: -1px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="rheader">SIDE</div>
+            <div class="mheader">TITLE</div>
+            <div class="lheader">LOGO</div>
+        </header>
+        <nav>NAVIGATOR</nav>
+        <section>
+            <aside>
+                <div class="laside">BANNER</div>
+                <div class="msection">CONTENTS</div>
+                <div class="raside">
+                    
+                </div>
+            </aside>
+        </section>
+        <footer>FOOTER</footer>
+    </body>
+</html>

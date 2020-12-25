@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>레이아웃 실습문제2</title>
+        <style>
+            header {
+                border: 1px solid black;
+                width: 600px;
+                height: 80px;
+                position: relative;
+            }
+            section {
+                border: 1px solid black;
+                width: 600px;
+                height: 300px;
+                position: relative;
+                margin-top: -1px;
+            }
+            .laside {
+                border: 1px solid black;
+                width: 100px;
+                height: 300px; 
+                position: absolute;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            .raside {
+                border: 1px solid black;
+                width: 150px;
+                height: 300px;
+                position: absolute;
+                left: 450px;
+                margin-left: -1px;
+                margin-top: -1px;
+            }
+            
+            footer {
+                border: 1px solid black;
+                width: 600px;
+                height: 80px;
+                margin-top: -1px;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <section>
+            <aside>
+                <div class="laside"></div>
+                <div class="raside"></div>
+            </aside>
+        </section>
+        <footer></footer>
+    </body>
+</html>
